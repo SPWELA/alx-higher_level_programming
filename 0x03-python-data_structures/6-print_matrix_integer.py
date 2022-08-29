@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-def add_tuple(tuple_a=(), tuple_b=()):
+def print_matrix_integer(matrix=[[]]):
 
-    for elm in matrix:
-        print(" ".join("{:d}".format(i) for i in elm))
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            if j != 0:
+                print(" ", end='')
+                print("{:d}".format(matrix[i][j]), end='')
+                print()
